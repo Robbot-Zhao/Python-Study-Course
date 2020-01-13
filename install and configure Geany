@@ -1,0 +1,11 @@
+My first Problem ever met:
+
+Geany is a good edit(someone says), if your environment is Linux/Ubuntu, you can choose to use Geany to edit Python code:
+step 1: insall: apt-get install geany
+step 2: start geany: type "geany" in shell, then there will be a geany window out
+step 2: configure geany:
+        2.1: chose the menu "Build->Set Build Command", if you are using python3 instead of python2, you should change python to python3 in Compile and Execute items in the configuration window.
+        2.2: chose the "Execute" button to execute Python file, if there is no output, maybe you met the problem like me, there is a problem about the terminal:x-terminal-emulator, you should firt install terminator:
+             apt-get insall terminator; the chose "Execute" again, if there is on line "unable to find a shell" in terminal window, you should do the next step
+        2.3: chose the menu "Edit-Preferenses", change the "Tools:Terminals" to "x-terminal-emulator -e /bin/sh %c", yes, remove the original "" of "/bin/sh %c", then execute again, it should be OK.
+
